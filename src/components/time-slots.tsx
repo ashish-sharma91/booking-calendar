@@ -18,7 +18,7 @@ function TimeSlots({ onSelect, slots }: Props): JSX.Element {
   };
 
   return (
-    <div>
+    <div data-testid="slots">
       {slots.map((slot) => (
         <div
           className={getSlotClassName(slot)}

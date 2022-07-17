@@ -74,8 +74,8 @@ function App() {
     <div>
       <CalendarWrapper onChange={onChangeDate} />
       {selectedDate && <TimeSlots onSelect={lockSlot} slots={slots} />}
-      {lockedSlot.length === 1 && <input placeholder="Enter reason" onChange={e=>setReason(e.target.value)} />}
-      {lockedSlot.length === 1 && <button onClick={bookSlot}>Book Slot</button>}
+      {lockedSlot.length === 1 && <input placeholder="Enter reason" onChange={e=>setReason(e.target.value)} data-testid="reasonInput" />}
+      {lockedSlot.length === 1 && <button onClick={bookSlot} data-testid="bookSlotBtn">Book Slot</button>}
     </div>
   );
 }

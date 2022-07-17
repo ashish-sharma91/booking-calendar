@@ -1,9 +1,31 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe("AdContainer", () => {
+  it("should render date input", () => {
+    render(<App />);
+    expect(screen.queryByTestId("calendar")).toBeInTheDocument();
+  });
+
+  it("should not render slots", () => {
+    render(<App />);
+    expect(screen.queryByTestId("slots")).not.toBeInTheDocument();
+  });
+
+  it("should not render reason input", () => {
+    render(<App />);
+    expect(screen.queryByTestId("reasonInput")).not.toBeInTheDocument();
+  });
+
+  it("should not render book button", () => {
+    render(<App />);
+    expect(screen.queryByTestId("bookSlotBtn")).not.toBeInTheDocument();
+  });
+});
+
+describe("AdContainer", () => {
+  it("should not render book button", () => {
+    render(<App />);
+    expect(screen.queryByTestId("slots")).not.toBeInTheDocument();
+  });
 });

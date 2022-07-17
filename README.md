@@ -27,6 +27,8 @@
 
 4. I can use the in-memory database instead of browser storage.
 5. As I have used in-memory database, I haven't restricted used to book only one slot.
+6. I forgot to use the API which was provided in the assignment, but due to time limit I am not changing.
+    It can be altered in slot service to get response from API instead of in memory.
 
 
 ### Resources (1minutes)

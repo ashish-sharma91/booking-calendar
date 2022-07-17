@@ -9,7 +9,7 @@ function CalendarWrapper({ onChange }: Props): JSX.Element {
   };
 
   return (
-    <div>
+    <div data-testid="calendar">
       <input type="date" onChange={inputHandler} />
     </div>
   );
