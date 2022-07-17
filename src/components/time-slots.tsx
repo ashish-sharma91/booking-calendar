@@ -7,11 +7,6 @@ interface Props {
 }
 
 function TimeSlots({ onSelect, slots }: Props): JSX.Element {
-  //   const inputHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
-  //     const date = event.target.value;
-  //     onSelect(date);
-  //   };
-
   const getSlotClassName = (slot: Slot) => {
     let classes = "slot";
     if (slot.booked) {
