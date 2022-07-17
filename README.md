@@ -25,6 +25,10 @@
 2. Allocated slots from the external api might change any time.
 3. Slots are always 1 hour, starts at full hours and 24/7.
 
+4. I can use the in-memory database instead of browser storage.
+5. As I have used in-memory database, I haven't restricted used to book only one slot.
+
+
 ### Resources (1minutes)
 1. https://cfcalendar.docs.apiary.io/#
 
